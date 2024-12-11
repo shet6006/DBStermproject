@@ -1,0 +1,168 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="25.0.3">
+  <diagram name="페이지-1" id="Y_ktfg37EQFJGlFqYFYq">
+    <mxGraphModel dx="5727" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="5000" pageHeight="5000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-84" value="회원 ID&lt;hr&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-85" value="회원 이름" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="120" y="40" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-86" value="이메일" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="200" y="40" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-87" value="연락처" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="280" y="40" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-88" value="가입 날짜" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="360" y="40" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-89" value="직책" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="440" y="40" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-90" value="회원 상태" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="520" y="40" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-91" value="동아리 ID&lt;hr&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-92" value="동아리 이름" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="120" y="120" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-93" value="지도 교수" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="200" y="120" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-94" value="동아리 소개" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="280" y="120" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-95" value="주요 활동" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="360" y="120" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-99" value="관리자 ID&lt;hr&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="274" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-100" value="관리자 이름" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="120" y="274" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-101" value="이메일" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="200" y="274" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-102" value="연락처" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="280" y="274" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-103" value="활동 ID&lt;hr&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="354" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-104" value="활동명" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="120" y="354" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-105" value="활동 설명" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="200" y="354" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-174" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="BwfsGi1fcsDad3vrNjtB-107" target="BwfsGi1fcsDad3vrNjtB-84">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="80" y="494" />
+              <mxPoint y="494" />
+              <mxPoint y="100" />
+              <mxPoint x="80" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-107" value="회원 ID&lt;hr&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="434" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-175" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="BwfsGi1fcsDad3vrNjtB-108" target="BwfsGi1fcsDad3vrNjtB-91">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="494" />
+              <mxPoint x="10" y="494" />
+              <mxPoint x="10" y="170" />
+              <mxPoint x="80" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-108" value="동아리 ID&lt;hr&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="120" y="434" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-176" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="BwfsGi1fcsDad3vrNjtB-110" target="BwfsGi1fcsDad3vrNjtB-84">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="80" y="574" />
+              <mxPoint x="-10" y="574" />
+              <mxPoint x="-10" y="90" />
+              <mxPoint x="80" y="90" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-110" value="회원 ID&lt;hr&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="514" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-177" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="BwfsGi1fcsDad3vrNjtB-111" target="BwfsGi1fcsDad3vrNjtB-103">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="574" />
+              <mxPoint x="220" y="574" />
+              <mxPoint x="220" y="410" />
+              <mxPoint x="80" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-111" value="활동 ID&lt;hr&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="120" y="514" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-114" value="회원" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="16" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-115" value="동아리" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="96" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-116" value="활동" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="330" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-117" value="관리자" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="250" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-118" value="소속" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="410" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-119" value="참여" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="490" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-129" value="통계 ID&lt;hr&gt;" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="200" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-173" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="BwfsGi1fcsDad3vrNjtB-130" target="BwfsGi1fcsDad3vrNjtB-91">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="260" />
+              <mxPoint x="20" y="260" />
+              <mxPoint x="20" y="180" />
+              <mxPoint x="80" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-130" value="동아리 ID" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="120" y="200" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-131" value="활동 내역" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="200" y="200" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-132" value="예산" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="280" y="200" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-133" value="회원 수" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="360" y="200" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-134" value="동아리 상태" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="440" y="200" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="BwfsGi1fcsDad3vrNjtB-136" value="동아리 통계" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="170" width="80" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

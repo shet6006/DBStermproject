@@ -1,69 +1,72 @@
-const initializeDatabase = require('./createDatabase'); // createDatabase.js
-const readline = require('readline');
-const connection = require('./db_connect'); // db_connect.js
+const readline = require("readline-sync");
+const connection = require("./db_connect");
 
-// CLI 인터페이스 생성
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
+// 회원 추가
+function addMember() {
+  const name = readline.question("회원 이름: ");
+  const email = readline.question("이메일: ");
+  const contact = readline.question("연락처: ");
+  const joinDate = readline.question("가입 날짜 (YYYY-MM-DD): ");
+  const position = readline.question("직책: ");
+  const status = readline.question("회원 상태: ");
 
-// 메인 메뉴
-function mainMenu() {
-  console.log(`
-==============================
-  데이터베이스 관리 시스템
-==============================
-1. 회원 생성
-2. 동아리 생성
-3. 데이터 조회
-4. 데이터 수정
-5. 데이터 삭제
-6. 종료
-==============================
-  원하는 작업 번호를 입력하세요:
-  `);
+  const query = `
+    INSERT INTO 회원 (회원_이름, 이메일, 연락처, 가입_날짜, 직책, 회원_상태)
+    VALUES (?, ?, ?, ?, ?, ?);
+  `;
 
-  rl.question('> ', (answer) => {
-    switch (answer.trim()) {
-      case '1':
-        createMember();
-        break;
-      case '2':
-        createClub();
-        break;
-      case '3':
-        viewData();
-        break;
-      case '4':
-        updateData();
-        break;
-      case '5':
-        deleteData();
-        break;
-      case '6':
-        console.log('프로그램을 종료합니다.');
-        connection.end(); // 프로그램 종료 시 연결 종료
-        rl.close();
-        process.exit();
-        break;
-      default:
-        console.log('잘못된 입력입니다. 다시 선택해주세요.');
-        mainMenu();
+  connection.query(query, [name, email, contact, joinDate, position, status], (err) => {
+    if (err) {
+      console.error("회원 추가 중 오류:", err.message);
+    } else {
+      console.log("회원이 성공적으로 추가되었습니다.");
     }
   });
 }
 
-// 회원 생성 (예제 함수)
-function createMember() {
-  rl.question('회원 이름: ', (name) => {
-    // ...
-    mainMenu(); // 작업 완료 후 메인 메뉴로 돌아가기
+// 회원 목록 조회
+function viewMembers() {
+  connection.query("SELECT * FROM 회원", (err, rows) => {
+    if (err) {
+      console.error("회원 조회 중 오류:", err.message);
+    } else if (rows.length === 0) {
+      console.log("회원 데이터가 없습니다.");
+    } else {
+      rows.forEach((row) => {
+        console.log(`회원ID: ${row.회원ID}, 이름: ${row.회원_이름}, 이메일: ${row.이메일}`);
+      });
+    }
   });
 }
 
-// 프로그램 시작
-initializeDatabase(() => {
-  console.log('데이터베이스 초기화 완료!');
-  mainMenu(); // 초기화 완료 후 메인 메뉴 실행
-});
+// 메인 메뉴
+function mainMenu() {
+  console.log("데이터베이스 초기화 중...");
+  require("./createDatabase")(() => {
+    while (true) {
+      console.log("\n동아리 관리 시스템");
+      console.log("1. 회원 추가");
+      console.log("2. 회원 목록 조회");
+      console.log("3. 종료");
+
+      const choice = readline.questionInt("선택: ");
+      switch (choice) {
+        case 1:
+          addMember();
+          break;
+        case 2:
+          viewMembers();
+          break;
+        case 3:
+          console.log("시스템 종료.");
+          connection.end();
+          return;
+        default:
+          console.log("잘못된 선택입니다. 다시 시도하세요.");
+      }
+    }
+  });
+}
+
+// 애플리케이션 실행
+mainMenu();

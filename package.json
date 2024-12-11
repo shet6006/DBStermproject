@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.7",
-    "mysql2": "^3.11.5"
+    "mysql2": "^3.11.5",
+    "readline-sync": "^1.4.10"
   }
 }
