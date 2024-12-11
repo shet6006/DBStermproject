@@ -1,55 +1,52 @@
 const readline = require("readline-sync");
 const connection = require("./db_connect");
 
-// 회원 추가
 function addMember() {
-  const name = readline.question("회원 이름: ");
-  const email = readline.question("이메일: ");
-  const contact = readline.question("연락처: ");
-  const joinDate = readline.question("가입 날짜 (YYYY-MM-DD): ");
-  const position = readline.question("직책: ");
-  const status = readline.question("회원 상태: ");
+  const name = readline.question("Member Name: ");
+  const email = readline.question("Email: ");
+  const contact = readline.question("Contact: ");
+  const joinDate = readline.question("Join Date (YYYY-MM-DD): ");
+  const position = readline.question("Position: ");
+  const status = readline.question("Member Status: ");
 
   const query = `
-    INSERT INTO 회원 (회원_이름, 이메일, 연락처, 가입_날짜, 직책, 회원_상태)
+    INSERT INTO Member (MemberName, Email, Contact, JoinDate, Position, MemberStatus)
     VALUES (?, ?, ?, ?, ?, ?);
   `;
 
   connection.query(query, [name, email, contact, joinDate, position, status], (err) => {
     if (err) {
-      console.error("회원 추가 중 오류:", err.message);
+      console.error("Error while adding member:", err.message);
     } else {
-      console.log("회원이 성공적으로 추가되었습니다.");
+      console.log("Member has been successfully added.");
     }
   });
 }
 
-// 회원 목록 조회
 function viewMembers() {
-  connection.query("SELECT * FROM 회원", (err, rows) => {
+  connection.query("SELECT * FROM Member", (err, rows) => {
     if (err) {
-      console.error("회원 조회 중 오류:", err.message);
+      console.error("Error while retrieving members:", err.message);
     } else if (rows.length === 0) {
-      console.log("회원 데이터가 없습니다.");
+      console.log("No members found.");
     } else {
       rows.forEach((row) => {
-        console.log(`회원ID: ${row.회원ID}, 이름: ${row.회원_이름}, 이메일: ${row.이메일}`);
+        console.log(`MemberID: ${row.MemberID}, Name: ${row.MemberName}, Email: ${row.Email}`);
       });
     }
   });
 }
 
-// 메인 메뉴
 function mainMenu() {
-  console.log("데이터베이스 초기화 중...");
+  console.log("Initializing database...");
   require("./createDatabase")(() => {
     while (true) {
-      console.log("\n동아리 관리 시스템");
-      console.log("1. 회원 추가");
-      console.log("2. 회원 목록 조회");
-      console.log("3. 종료");
+      console.log("\nClub Management System");
+      console.log("1. Add Member");
+      console.log("2. View Members");
+      console.log("3. Exit");
 
-      const choice = readline.questionInt("선택: ");
+      const choice = readline.questionInt("Choose an option: ");
       switch (choice) {
         case 1:
           addMember();
@@ -58,15 +55,14 @@ function mainMenu() {
           viewMembers();
           break;
         case 3:
-          console.log("시스템 종료.");
+          console.log("Exiting the system.");
           connection.end();
           return;
         default:
-          console.log("잘못된 선택입니다. 다시 시도하세요.");
+          console.log("Invalid choice. Please try again.");
       }
     }
   });
 }
 
-// 애플리케이션 실행
 mainMenu();
