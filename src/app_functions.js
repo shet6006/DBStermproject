@@ -179,8 +179,9 @@ const viewClubMembers = async (clubId) => {
     } else {
       console.log("\n=== 동아리 회원 ===");
       rows.forEach((row) => {
+        const joinDate = new Date(row.JoinDate).toISOString().split("T")[0];
         console.log(
-          `회원 ID: ${row.MemberID}, 이름: ${row.MemberName}, 이메일: ${row.Email}, 직책: ${row.Position}`
+          `회원 ID: ${row.MemberID}, 이름: ${row.MemberName}, 이메일: ${row.Email}, 연락처: ${row.Contact}, 가입 날짜: ${joinDate}, 직책: ${row.Position}`
         );
       });
     }
